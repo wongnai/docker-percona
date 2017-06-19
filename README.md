@@ -3,9 +3,9 @@ Percona Server with xtrabackup.
 
 This docker image basically extends from https://hub.docker.com/_/percona/ and includes [xtrabackup](https://www.percona.com/doc/percona-xtrabackup/LATEST/index.html).
 
-You need to mount volume to /target to keep the backup files.
+You need to mount volume to /backup to keep the backup files.
 
-To backup file to /target, just run 
+To backup file to /backup, just run 
 
     backup.sh
 
