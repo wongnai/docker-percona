@@ -8,7 +8,9 @@ RUN apt-key adv --keyserver keys.gnupg.net --recv-keys 1C4CBDCDCD2EFD2A && \
     rm -rf /var/lib/apt/lists/* && \
     mkdir -p /target
 
-ENV BACKUP_DIR
+ENV BACKUP_DIR /backup
+
+RUN mkdir -p ${BACKUP_DIR}
     
 COPY backup.sh /usr/bin
 
