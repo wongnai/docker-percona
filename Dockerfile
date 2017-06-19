@@ -1,4 +1,4 @@
-FROM percona:5.7
+FROM percona:5.6
 MAINTAINER Suparit Krityakien
 
 RUN apt-key adv --keyserver keys.gnupg.net --recv-keys 1C4CBDCDCD2EFD2A && \
