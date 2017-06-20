@@ -13,3 +13,5 @@ The script uses the following environment variables which are same as the Percon
 
 * MYSQL_USER 
 * MYSQL_PASSWORD
+* MYSQL_ROOT_PASSWORD (used if MYSQL_USER is root or undefined and not empty password)
+* MYSQL_ALLOW_EMPTY_PASSWORD (used if MYSQL_USER is root or undefined)
