@@ -6,7 +6,7 @@ RUN apt-key adv --keyserver keys.gnupg.net --recv-keys 1C4CBDCDCD2EFD2A && \
     apt-get update && \
     apt-get install -y percona-xtrabackup-24 && \
     rm -rf /var/lib/apt/lists/* && \
-    mkdir -p /target
+    mkdir -p /backup
 
 ENV BACKUP_DIR /backup
 
